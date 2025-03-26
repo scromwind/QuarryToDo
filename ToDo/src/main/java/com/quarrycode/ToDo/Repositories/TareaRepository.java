@@ -1,5 +1,9 @@
 package com.quarrycode.ToDo.Repositories;
 
-public interface TareaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.quarrycode.ToDo.Models.TareaModel;
+
+public interface TareaRepository extends JpaRepository<TareaModel,Long> {
 
 }
