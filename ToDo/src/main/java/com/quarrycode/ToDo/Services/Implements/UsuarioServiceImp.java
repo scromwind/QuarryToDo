@@ -1,5 +1,14 @@
 package com.quarrycode.ToDo.Services.Implements;
 
-public class UsuarioServiceImp {
+import org.springframework.stereotype.Service;
+
+
+import lombok.NoArgsConstructor;
+
+@Service
+@NoArgsConstructor
+public class UsuarioServiceImp{
+    
+
 
 }

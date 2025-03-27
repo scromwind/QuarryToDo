@@ -1,5 +1,7 @@
 package com.quarrycode.ToDo.Mappers;
 
+import java.util.List;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -10,6 +12,9 @@ import com.quarrycode.ToDo.Models.TareaModel;
 public interface TareaMapper {
 
     @Mapping(target = "createdAT",ignore = true)
-    @Mapping(target = "usuario",ignore = true)
     public TareaModel ConvertirAEntidad (TareaDto tarea);
+
+    public TareaDto ConvetirADto(TareaModel tareaModel);
+
+    public List<TareaDto> ConvetirADto(List<TareaModel> tareasModel);
 }

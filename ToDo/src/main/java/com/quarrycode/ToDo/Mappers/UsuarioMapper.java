@@ -13,7 +13,6 @@ public interface UsuarioMapper {
     
     public UsuarioDTO ConvertirADto(UsuarioModel usuario);
 
-    @Mapping(target = "tareas",ignore = true)
     @Mapping(target = "createdAT",ignore = true)
     @Mapping(target = "id",ignore = true)
     public UsuarioModel ConvertirAEntidad(UsuarioDTO usuario);

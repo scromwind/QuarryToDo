@@ -1,5 +1,11 @@
 package com.quarrycode.ToDo.Services;
 
-public interface TareaService {
+import java.util.List;
 
+import com.quarrycode.ToDo.DTOs.TareaDto;
+
+public interface TareaService {
+    TareaDto CrearTarea(TareaDto tareadDTO);
+    List<TareaDto> ListarTareas();
 }
+ 
